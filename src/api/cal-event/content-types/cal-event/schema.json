@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cal_events",
+  "info": {
+    "singularName": "cal-event",
+    "pluralName": "cal-events",
+    "displayName": "CalEvent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Date": {
+      "type": "datetime",
+      "required": true
+    },
+    "other": {
+      "type": "integer"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
